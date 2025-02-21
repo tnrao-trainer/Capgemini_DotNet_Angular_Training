@@ -1,1 +1,1 @@
-# Capgemini_DotNet_Angular_Training
+# Capgemini DotNet Angular Training -  Feb2025
