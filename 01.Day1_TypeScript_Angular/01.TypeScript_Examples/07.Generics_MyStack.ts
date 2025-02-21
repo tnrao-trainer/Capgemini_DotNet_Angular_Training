@@ -8,7 +8,7 @@ class MyStack<T>
         this.data.push(value);
 	}	
 	
-	pop():T
+	pop():T|undefined
 	{
 		return this.data.pop();
 	}
@@ -19,7 +19,7 @@ let s1:MyStack<number> = new MyStack<number>();
 s1.push( 10  );
 s1.push( 20  );
 console.log("**************************");
-let x:number = 0;
+let x:number|undefined = 0;
 
 x = s1.pop();
 console.log(x + " pop from stack");
@@ -37,13 +37,12 @@ s2.push("NodeJS");
 // s2.push("Hi");
 console.log("**************************");
 
-let y:string = s2.pop();
+let y:string|undefined = s2.pop();
 
 while(y != undefined)
 {
     console.log(y + " pop from stack");
     y = s2.pop();
 }
-
 
 
