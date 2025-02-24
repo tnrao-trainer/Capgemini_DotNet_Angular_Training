@@ -1,1 +1,79 @@
  
+Day2:  Angular Component and templates
+Date :   24th Feb, 2025 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Adding new components:
+
+		ng   generate   component   login 
+		ng   g   c   demo 
+		ng   g   c   emps
+		....
+		
+		>  ng   g   c   login
+		
+				
+		
+		
+		
+Angular Directives	:
+
+		---  like html attributes
+		---  add dynamic behaviour to your html elements in templates 
+		
+		Eg:     *ngFor,  *ngIf, ....
+		
+		
+Usage of *ngFor:
+~~~~~~~~~~~~~~~~
+
+			<tag  *ngFor="let   item  of   array">
+					{{item}}
+			</tag>
+		
+
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		let  empObj = { prop:value, ....... };
+		
+		
+		let empsArray = [
+					{empno :  15454,  ename  : "Scott",  job :  "Manager", deptno : 10},
+					{empno :  15454,  ename  : "Scott",  job :  "Manager", deptno : 10},
+					{empno :  15454,  ename  : "Scott",  job :  "Manager", deptno : 10}
+					....
+		];
+		
+---------------------------
+
+
+JavaScript:
+			<input type="button" value="Login" onclick="loginButtonClick()"  />
+
+Angular
+			<input type="button" value="Login" (click)="loginButtonClick()"  />
+ 
+ 
+ 
+ <select  (change)="method1()">
+ .....
+ </select>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
