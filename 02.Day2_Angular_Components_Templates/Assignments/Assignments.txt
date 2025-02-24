@@ -1,0 +1,5 @@
+1.  Create Users Component to display the users details in cards format (Refer the image).
+
+2.  Create a products component to process product details to find out total amount based on the price and quantity (Refer the image )
+
+
