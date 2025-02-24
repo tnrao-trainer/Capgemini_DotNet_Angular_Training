@@ -1,0 +1,53 @@
+Select Display Mode :
+<select [(ngModel)]="displayMode">
+    <option>List</option>
+    <option>Table</option>
+    <option>Cards</option>
+</select>
+<hr />
+
+<section [ngSwitch]="displayMode">
+    <article *ngSwitchCase="'List'">
+        <ol>
+            <li *ngFor="let item of empsArray">
+                Mr./Ms.
+                <span style="color:green; font-weight:bold;">{{item.ename}}</span> working as a
+                <span [ngStyle]="{color:'red', fontWeight:'bold'}"> {{item.job}} </span>
+                in {{item.deptno}} department.
+            </li>
+        </ol>
+    </article>
+
+    <article *ngSwitchCase="'Table'">
+        <table border="2" cellspacing="0" width="700">
+            <tr class="bg1">
+                <th>S.No.</th>
+                <th>Employee Number</th>
+                <th>Employee Name</th>
+                <th>Employee Job</th>
+                <th>Employee Deptno</th>
+            </tr>
+
+            <tr *ngFor="let item of empsArray;  let i = index; let x = even; let y = odd;"
+                [ngClass]="{bg2 : x, bg3 :  y}">
+                <td>{{i + 1}}</td>
+                <td>{{item.empno}} </td>
+                <td>{{item.ename}}</td>
+                <td>{{item.job}}</td>
+                <td>{{item.deptno}}</td>
+            </tr>
+            <tr *ngIf=" empsArray.length == 0 ">
+                <td colspan="5">**There are no employees in the database</td>
+            </tr>
+        </table>
+    </article>
+
+    <article *ngSwitchCase="'Cards'">
+
+        <div class="card" *ngFor="let item of empsArray">
+            <span style="color:blue; font-size:20px;">{{item.empno}} - {{item.ename}}</span> <br />
+            <span style="color:Red;">Job : {{item.job}}</span> <br />
+            <span style="color:green;">Deptno : {{item.deptno}}</span> <br />
+        </div>
+    </article>
+</section>
