@@ -1,0 +1,53 @@
+<h3>Data Handling in Angular Templates</h3>
+<hr/>
+
+<div style="border:1px solid gray; padding:5px;">
+    User Name :  {{uname}}  <br/>
+    User Age :  {{age}}  <br/>
+    Is Valid User  :  {{isValidUser}}  <br/>
+</div>
+
+<div style="border:1px solid gray; padding:5px;">
+  <ul>
+    <li  *ngFor="let   item  of   skillsArray">
+      {{item}}
+    </li>    
+  </ul>
+</div>  
+
+
+<div style="border:1px solid gray; padding:5px;">
+  <table  border="2">
+    <tr>
+      <th>Skill Name</th>
+    </tr>
+    <tr  *ngFor="let   item  of   skillsArray">
+        <td> {{item}} </td>
+    </tr>    
+  </table>
+</div>  
+
+<div style="border:1px solid gray; padding:5px;"> 
+  Emp Number :  {{empObj.empno}} <br/>
+  Emp Name :  {{empObj.ename}} <br/>
+  Emp Job:  {{empObj.job}} <br/>
+  Emp Deptno:  {{empObj.deptno}} <br/>
+</div>
+
+
+<div style="border:1px solid gray; padding:5px;">
+  <table  border="2">    
+    <tr>
+      <th>Empno</th>
+      <th>Ename</th>
+      <th>Job</th>
+      <th>Deptno</th>
+    </tr>
+    <tr  *ngFor="let   item  of   empsArray">
+        <td> {{item.empno}} </td>
+        <td> {{item.ename}} </td>
+        <td> {{item.job}} </td>
+        <td> {{item.deptno}} </td>
+    </tr>    
+  </table>
+</div>  

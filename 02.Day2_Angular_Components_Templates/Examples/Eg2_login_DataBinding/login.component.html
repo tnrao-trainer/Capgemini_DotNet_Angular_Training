@@ -1,0 +1,12 @@
+<h3>User Login Component</h3>
+<hr/>
+
+<fieldset>
+    <legend>User Login</legend>
+    User Id :  <input type="text"  [(ngModel)]="uid" />  <br/><br/>
+    Password:  <input type="password" [(ngModel)]="pwd" />   <br/><br/>
+    <input type="button"  [disabled]="isDisabled" value="Login" (click)="loginButtonClick()"  />
+    <p> {{ result }} </p>
+</fieldset>
+
+
