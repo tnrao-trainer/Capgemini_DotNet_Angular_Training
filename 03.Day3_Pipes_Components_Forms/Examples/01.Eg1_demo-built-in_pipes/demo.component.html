@@ -1,0 +1,12 @@
+<h3 align="center">Transforming Data using Pipes in Angular</h3>
+<hr />
+
+<div style="border:2px solid lightcoral; border-top-width:15px; padding: 5px; font-size: 20px;">
+    <h4 align="center" style="margin: 0px;">Student Details</h4>
+    Student Id : {{sid }} <br />
+    Student Name : {{sname | titlecase }} <br />
+    Course Name : {{course | uppercase }} <br />
+    Email Id : {{email | lowercase  }} <br />
+    Joining Date : {{joinDate | date : "dd-MM-yyyy" }} <br />
+    Course Fee : {{fee | currency : "INR" }} <br />   
+</div>   
