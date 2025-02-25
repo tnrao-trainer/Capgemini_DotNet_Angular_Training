@@ -1,0 +1,7 @@
+
+1.  Create a component to display only first 10 objects using slice pipe
+2.  Create a custom pipe for employee grades. ( Refer the image )
+3.  Simulate parent and child component communication on employee data. (Refer the depts example)
+4.  What are template Reference Variable in Angular? How to implement with example?
+5.  Revise yesterday's concepts :  templates, data binding, etc... 
+
