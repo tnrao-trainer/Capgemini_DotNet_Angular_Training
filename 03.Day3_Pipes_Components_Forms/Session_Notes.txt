@@ -1,1 +1,50 @@
    
+Day3: Angular Pipes, Components Communication, Forms
+Date:  25th Feb, 2025
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+built-in pipes in Angular:
+			uppercase
+			lowercase
+			titlecase
+			date
+			currency 
+			slice
+
+
+
+Usage:
+
+scalar
+	{{genderStr | gender}}
+	
+object 	
+	{{stObj.genderStr | gender}}
+	
+ array objects:
+	<tr *ngFor="let item of studentsArray">
+			<td>{{item.sname | titlecase}}</td>
+			.....
+			<td>{{item.gender | gender}}</td>
+	</tr>
+	
+	
+	
+	
+	Parent :   dept-list
+	
+			// define depts data 
+			//  send data to child 
+			
+			
+	
+	
+	Child :   dept-details
+	// display the given dept object 
+	
+	
+	
+	
+	
+	
