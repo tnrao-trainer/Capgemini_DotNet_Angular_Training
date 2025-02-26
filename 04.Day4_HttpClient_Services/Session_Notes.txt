@@ -1,0 +1,19 @@
+Day4:   HttpClient and Services in Angular
+Date:  26th Feb, 2025
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+Making ajax calls / server calls using HttpClient
+
+
+	let url = "http://localhost:65465/api/EmpsApi";
+	
+	// this.httpObj.get(url).subscribe(callback);  // syntax
+	
+	this.httpObj.get(url).subscribe((response:any) =>  
+	{
+		// logic to handle the response 
+	});
