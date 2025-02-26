@@ -1,0 +1,11 @@
+1.  Create a component to perform crud operations using data services that will communicate with back end api?
+
+2.  Update the HelloServices with the following requirement:
+
+			a.  display the greeting message based on the time:
+						12 am to 12 pm    ---  good morning 
+						12 pm to 5 pm    ---  good afternoon 
+						5 pm to 9 pm    ---  good evening
+						9 pm to  12 am ---   good night
+							
+					 
