@@ -1,0 +1,52 @@
+Day5:   RxJS and JWT Tokens in HTTP calls
+Date:  27th Feb, 2025
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   
+   
+      
+   
+  Error Handling in Http calls
+  ~~~~~~~~~~~~~~~~~~~~~~~~~
+   this.dataServiceObj.getAllStudents().subscribe(  
+   {
+        next:    (resData:any) => {
+            console.log(resData);
+            this.studentsArray = resData;
+        },
+        error: 		(error:any) => console.log(error.message)
+  });
+  ---------------------------------------------------------------------------------------------
+     this.dataServiceObj.getAllStudents().subscribe( (resData:any) => {
+            console.log(resData);
+            this.studentsArray = resData; 
+	});
+	
+	
+---------------------------------------------------------------------------------------------	
+	
+	
+	 
+	
+Strongly typed responses in server calls using HttpClient 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  getAllStudents():Observable<Student[]>
+  {
+				return  this.httpObj.get<Student[]>(this.url);
+  }
+  
+   
+  
+  How to send JWT tokens while making ajax calls / server calls using HttpClient?
+  
+  
+         let authToken = "akjdflk8a7sdfasdfas7df98as7df987asd98f7";
+
+      //    const authToken = sessionStorage.getItem('token'); // Get token dynamically
+    
+          // Define headers with Authorization token
+          const headers = new HttpHeaders({
+            Authorization: `Bearer   ${authToken}`
+          });
+		  
+		            
+    return  this.httpObj.get<Student[]>(this.url, {headers});
+  
